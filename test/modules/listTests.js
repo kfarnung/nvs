@@ -494,11 +494,11 @@ test('Get remote versions - network path', t => {
 
 	return getNetworkRemoteVersionsAsync('test1',
 		testNetworkPath + '{version}\\{arch}.msi').then(result => {
-			t.truthy(result);
-			t.is(result.length, 2);
-			t.is(result[0].semanticVersion, '5.6.7');
-			t.is(result[1].semanticVersion, '7.8.9');
-		});
+		t.truthy(result);
+		t.is(result.length, 2);
+		t.is(result[0].semanticVersion, '5.6.7');
+		t.is(result[1].semanticVersion, '7.8.9');
+	});
 });
 
 test('Get remote versions - network path not found', t => {
